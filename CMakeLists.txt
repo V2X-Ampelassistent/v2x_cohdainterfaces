@@ -24,6 +24,8 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GPS.msg"
+  "msg/MAPEM.msg"
+  "msg/SPATEM.msg"
  )
 
 if(BUILD_TESTING)
