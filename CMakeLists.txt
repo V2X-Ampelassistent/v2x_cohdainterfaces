@@ -26,6 +26,15 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GPS.msg"
   "msg/MAPEM.msg"
   "msg/SPATEM.msg"
+  "msg/spat/SPAT.msg"
+  "msg/spat/Intersection.msg"
+  "msg/spat/IntersectionID.msg"
+  "msg/spat/SignalState.msg"
+  "msg/spat/StateTimeSpeed.msg"
+  "msg/spat/Timing.msg"
+  "msg/spat/Speed.msg"
+  "msg/spat/ManeuverAssist.msg"
+  "msg/spat/Regional.msg"
  )
 
 if(BUILD_TESTING)
