@@ -22,37 +22,14 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
+# Find all .msg files in the msg/generated directory
+file(GLOB_RECURSE msg_files RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}"
+  "msg/generated/*.msg"
+)
+
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GPS.msg"
-  "msg/MAPEM.msg"
-  "msg/SPATEM.msg"
-  "msg/spat/SPAT.msg"
-  "msg/spat/Intersection.msg"
-  "msg/spat/IntersectionID.msg"
-  "msg/spat/SignalState.msg"
-  "msg/spat/StateTimeSpeed.msg"
-  "msg/spat/Timing.msg"
-  "msg/spat/Speed.msg"
-  "msg/spat/ManeuverAssist.msg"
-  "msg/spat/Regional.msg"
-  "msg/mapem/MapemMapData.msg"
-  "msg/mapem/MapemIntersection.msg"
-  "msg/mapem/MapemIntersectionID.msg"
-  "msg/mapem/MapemReferencePoint.msg"
-  "msg/mapem/MapemSpeedLimit.msg"
-  "msg/mapem/MapemLane.msg"
-  "msg/mapem/MapemLaneAttributes.msg"
-  "msg/mapem/MapemNodeList.msg"
-  "msg/mapem/MapemConnection.msg"
-  "msg/mapem/MapemConnectingLane.msg"
-  "msg/mapem/MapemRemoteIntersection.msg"
-  "msg/mapem/MapemPreemptPriorityData.msg"
-  "msg/mapem/MapemZone.msg"
-  "msg/mapem/MapemRoadSegment.msg"
-  "msg/mapem/MapemDataParameters.msg"
-  "msg/mapem/MapemRestriction.msg"
-  "msg/mapem/MapemUserRestriction.msg"
-  "msg/mapem/MapemRegional.msg"
+  ${msg_files}
  )
 
 if(BUILD_TESTING)
