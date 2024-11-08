@@ -4,10 +4,10 @@
 
 Null unknown
 Null free
-Timestampits freeuntil
+Timestampits[] freeuntil
 Null fullyoccupied
 int32 partiallyoccupied
-Timestampits occupieduntil
-Timestampits reserveduntil
+Timestampits[] occupieduntil
+Timestampits[] reserveduntil
 Null accessblocked
 Null retrictedusage

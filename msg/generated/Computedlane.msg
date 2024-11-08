@@ -3,7 +3,10 @@
 # original asn1 type: SEQUENCE
 
 Laneid referencelaneid
-Drivenlineoffsetlg large
+Drivenlineoffsetsm[] offsetxaxissmall
+Drivenlineoffsetlg[] offsetxaxislarge
+Drivenlineoffsetsm[] offsetyaxissmall
+Drivenlineoffsetlg[] offsetyaxislarge
 Angle rotatexy
 Scaleb12 scalexaxis
 Scaleb12 scaleyaxis

@@ -7,5 +7,5 @@ Null unlimitedoccupancy
 Null onlywhilecharging
 int32 limitedduration
 int32 onlywhilecharginglimitedduration
-Timestampits parkingalloweduntil
-Timestampits forcedparkinguntil
+Timestampits[] parkingalloweduntil
+Timestampits[] forcedparkinguntil

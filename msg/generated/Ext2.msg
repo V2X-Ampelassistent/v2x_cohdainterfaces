@@ -3,4 +3,4 @@
 # original asn1 type: CHOICE
 
 int32 content
-Ext3 extension
+Ext3[] extension
